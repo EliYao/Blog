@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>对于重装系统方法的总结 | Eli&#39;s House</title>
+
+  
+  <meta name="author" content="Eli Yao">
+  
+
+  
+  <meta name="description" content="如无必要，请不要重装系统。
+除非我还要新配置台式机或者运维服务器，不然这种事基本不会再干了。所以将以前的积累的思路写出来，希望有需要的人可以收藏着，这个方法这几年里应该都是有用的。再过几年，真没人干这事了。
+这个文章应该是针对 Windows 用户的，但其实也没那么针对性。主要有下面几个步骤（我这里">
+  
+
+  
+  
+  <meta name="keywords" content="">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="对于重装系统方法的总结"/>
+
+  <meta property="og:site_name" content="Eli&#39;s House"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Eli&#39;s House" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Eli&#39;s House</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>对于重装系统方法的总结</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/01/12/Reinstall-OS/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-01-11T16:00:00.000Z">
+          2016-01-12
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>如无必要，请不要重装系统。</p>
+<p>除非我还要新配置台式机或者运维服务器，不然这种事基本不会再干了。所以将以前的积累的思路写出来，希望有需要的人可以收藏着，这个方法这几年里应该都是有用的。再过几年，真没人干这事了。</p>
+<p>这个文章应该是针对 Windows 用户的，但其实也没那么针对性。主要有下面几个步骤（我这里只提一种安装方式）：</p>
+<ol>
+<li>准备镜像文件与硬件驱动</li>
+<li>将镜像写入 U 盘</li>
+<li>U 盘启动安装</li>
+<li>安装驱动</li>
+</ol>
+<h2 id="准备镜像文件与硬件驱动"><a href="#准备镜像文件与硬件驱动" class="headerlink" title="准备镜像文件与硬件驱动"></a>准备镜像文件与硬件驱动</h2><p>镜像文件：搜某某系统 ISO 文件即可。但这样毕竟乱，「MSDN, 我告诉你」这个网站整理了，可以直接去那里找，但安全性我不保证。如果要保证安全，就去检验 SHA1 值，它都提供了，自己弄个校验工具就好。</p>
+<p>驱动：如果是笔记本就去该品牌官网下载，而组装机去各自配件的官网下载。</p>
+<h2 id="将镜像写入-U-盘"><a href="#将镜像写入-U-盘" class="headerlink" title="将镜像写入 U 盘"></a>将镜像写入 U 盘</h2><p>用 UltraISO（软碟通） 即可，免费使用即可，具体操作可看官方教程。</p>
+<h2 id="U-盘启动安装"><a href="#U-盘启动安装" class="headerlink" title="U 盘启动安装"></a>U 盘启动安装</h2><p>将写入后的 U 盘插在电脑上重启，然后调整启动顺序，现在一般都有快捷键，F8 或者 Esc，如果不是请搜关键字「某某主板某某电脑 U 盘启动」。</p>
+<p>安装过程中会让你选择安装分区的，你如果不格式化现在的操作系统一般会保留原来的系统，你直接这么做就好了。除非数据都不要了，就格式化。</p>
+<h2 id="安装驱动"><a href="#安装驱动" class="headerlink" title="安装驱动"></a>安装驱动</h2><p>先安装主板驱动，后面随意。（如果提示重启，就请先重启，然后继续安装）</p>
+<h2 id="为什么不推荐重装系统"><a href="#为什么不推荐重装系统" class="headerlink" title="为什么不推荐重装系统"></a>为什么不推荐重装系统</h2><p>因为很多时候并没有这个必要，且不是什么有意义的活动。说白了它的原理就是将镜像中的文件解压在放到合适的位置，然后让主板能够顺利找到启动的入口，就是一个长时间的复制粘贴……</p>
+<p>如果你觉得电脑卡了，就整理下自己的软件是否安装过多，然后同时启动太多了。如果不是，你该换电脑了。</p>
+<hr>
+<h2 id="关于系统升级"><a href="#关于系统升级" class="headerlink" title="关于系统升级"></a>关于系统升级</h2><p>随系统的提示升级就好，不会有过多的操作，文件会原模原样保留的。推荐你升级，因为能获得更好的体验。新系统的状态一般都能足够稳定让你使用原来的软件。不过也有特例，Windows 用户没机会感受的-，-</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2017 Eli Yao
+    
+  </p>
+</footer>
+    
+  </div>
+</div>
+</body>
+</html>
