@@ -75,5 +75,5 @@ theme: Hacker
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:EliYao/eliyao.github.io.git
+  repo: git@github.com:EliYao/blog.git
   branch: gh-pages
