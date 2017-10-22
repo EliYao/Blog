@@ -2,8 +2,14 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "dev": "hexo server",
+    "build": "hexo generate",
+    "deploy": "hexo deploy",
+    "publish": "npm run build && npm run deploy"
+  },
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.3.9"
   },
   "dependencies": {
     "hexo": "^3.2.0",
