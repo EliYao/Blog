@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>用 NVM 或 NVS 管理 Node.js 版本 | Eli&#39;s House</title>
+
+  
+  <meta name="author" content="Eli Yao">
+  
+
+  
+  <meta name="description" content="Node.js 升级非常频繁，当长期使用 Node.js 进行开发工作时，有必要使用一个能够灵活切换 Node.js 版本的工具。
+Node.js 版本管理工具主要有两个 NVM、NVS，前者出来相对更久一点但不支持 Windows，后者跨平台，所以现在一般推荐安装后者。
+关于安装步骤，根据官方教程">
+  
+
+  
+  
+  <meta name="keywords" content>
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="用 NVM 或 NVS 管理 Node.js 版本">
+
+  <meta property="og:site_name" content="Eli&#39;s House">
+
+  
+  <meta property="og:image" content="/blog/favicon.ico">
+  
+  <link rel="icon" href="/blog/favicon.ico" type="image/x-icon">
+  <link rel="alternate" href="/blog/atom.xml" title="Eli&#39;s House" type="application/atom+xml">
+  <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/blog/">Eli&#39;s House</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/blog/">Home</a></li>
+      
+        <li><a href="/blog/archives">Archives</a></li>
+      
+        <li><a href="/blog/about">About</a></li>
+      
+        <li><a href="/blog/atom.xml">RSS</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>用 NVM 或 NVS 管理 Node.js 版本</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/blog/2017/04/08/用 NVM 或 NVS 管理 Node.js 版本/" rel="bookmark">
+        <time class="entry-date published" datetime="2017-04-07T16:00:00.000Z">
+          2017-04-08
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>Node.js 升级非常频繁，当长期使用 Node.js 进行开发工作时，有必要使用一个能够灵活切换 Node.js 版本的工具。</p>
+<p>Node.js 版本管理工具主要有两个 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">NVM</a>、<a href="https://github.com/jasongin/nvs" target="_blank" rel="noopener">NVS</a>，前者出来相对更久一点但不支持 Windows，后者跨平台，所以现在一般推荐安装后者。</p>
+<p>关于安装步骤，根据官方教程走就好了，非常简单，Windows NVS 安装与使用需要管理员权限，同时要设置允许运行 Powershell 脚本。</p>
+<p>安装完以后，这里有个小建议是把它们的镜像源更改到国内，不然下载速度会非常慢，还有可能下载失败。</p>
+<p>替换镜像源的方法如下：</p>
+<h3 id="NVM"><a href="#NVM" class="headerlink" title="NVM"></a>NVM</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</span><br></pre></td></tr></table></figure>
+
+<h3 id="NVS"><a href="#NVS" class="headerlink" title="NVS"></a>NVS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvs remote taobao https://npm.taobao.org/mirrors/node/</span><br></pre></td></tr></table></figure>
+
+<p>然后就能愉快的切换 Node.js 版本啦。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2019 Eli Yao
+    
+  </p>
+</footer>
+    
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261354241'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261354241' type='text/javascript'%3E%3C/script%3E"));</script>
+<style>
+#cnzz_stat_icon_1261354241 {display:none;}
+</style>
+
+  </div>
+</div>
+</body>
+</html>

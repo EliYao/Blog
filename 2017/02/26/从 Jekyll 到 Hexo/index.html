@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>从 Jekyll 到 Hexo | Eli&#39;s House</title>
+
+  
+  <meta name="author" content="Eli Yao">
+  
+
+  
+  <meta name="description" content="之前这个博客一直用 Jekyll，虽然 Jekyll 挺方便，但是除了 Jekyll，几乎没有能用到 Ruby 的地方。在折腾的过程中感觉 Ruby 对 Windows 的支持极差，虽然能用但总归不爽。再者自己用的最多的就是 JavaScript 与 Node.js，叛逃到 Hexo 应该是迟早的事">
+  
+
+  
+  
+  <meta name="keywords" content>
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="从 Jekyll 到 Hexo">
+
+  <meta property="og:site_name" content="Eli&#39;s House">
+
+  
+  <meta property="og:image" content="/blog/favicon.ico">
+  
+  <link rel="icon" href="/blog/favicon.ico" type="image/x-icon">
+  <link rel="alternate" href="/blog/atom.xml" title="Eli&#39;s House" type="application/atom+xml">
+  <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/blog/">Eli&#39;s House</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/blog/">Home</a></li>
+      
+        <li><a href="/blog/archives">Archives</a></li>
+      
+        <li><a href="/blog/about">About</a></li>
+      
+        <li><a href="/blog/atom.xml">RSS</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>从 Jekyll 到 Hexo</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/blog/2017/02/26/从 Jekyll 到 Hexo/" rel="bookmark">
+        <time class="entry-date published" datetime="2017-02-25T16:00:00.000Z">
+          2017-02-26
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>之前这个博客一直用 <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>，虽然 Jekyll 挺方便，但是除了 Jekyll，几乎没有能用到 Ruby 的地方。在折腾的过程中感觉 Ruby 对 Windows 的支持极差，虽然能用但总归不爽。再者自己用的最多的就是 JavaScript 与 Node.js，叛逃到 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 应该是迟早的事。去年折腾过 Hexo，应该是部署过程中有坑，然后就没管它，那时候嫌麻烦吧。昨天给 <a href="https://eggjs.org/" target="_blank" rel="noopener">eggjs</a> 修改文档，刚好手头是 Windows 然后 eggjs 的文档又用了 Hexo，随即尝试了一下，竟然跑起来了。改完文档以后，就果断把自己的博客迁移到了 Hexo。</p>
+<p>迁移过程中，发现大致要注意一下几个点吧：</p>
+<ul>
+<li>配置 <a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="noopener">github ssh key</a> (解决自动部署没有权限的问题)</li>
+<li>指定合适的部署 branch，我指定的是 gh-pages (因为 Hexo 会默认把其它不是从 source 目录上生成的内容在提交时干掉)，然后用master保存其它没有提交的内容。</li>
+<li>给 git 加个<a href="https://gist.github.com/laispace/666dd7b27e9116faece6" target="_blank" rel="noopener">代理</a>，你会发现 github 还是能用的 </li>
+</ul>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2019 Eli Yao
+    
+  </p>
+</footer>
+    
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261354241'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261354241' type='text/javascript'%3E%3C/script%3E"));</script>
+<style>
+#cnzz_stat_icon_1261354241 {display:none;}
+</style>
+
+  </div>
+</div>
+</body>
+</html>

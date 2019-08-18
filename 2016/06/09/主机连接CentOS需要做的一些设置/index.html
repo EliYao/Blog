@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>主机连接 CentOS 需要做的一些设置 | Eli&#39;s House</title>
+
+  
+  <meta name="author" content="Eli Yao">
+  
+
+  
+  <meta name="description" content="主要是为了更新这个 Blog，在 Windows 下 Ruby 环境安装一直出现问题，所以就打算直接用 Linux 了。今天在折腾环境的过程中发现了 taobao 提供了 gem 依赖的镜像站 ruby.taobao.org，使用了以后部署起来基本无痛了，不知道主要是使用 Linux 导致还是镜像地">
+  
+
+  
+  
+  <meta name="keywords" content>
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="主机连接 CentOS 需要做的一些设置">
+
+  <meta property="og:site_name" content="Eli&#39;s House">
+
+  
+  <meta property="og:image" content="/blog/favicon.ico">
+  
+  <link rel="icon" href="/blog/favicon.ico" type="image/x-icon">
+  <link rel="alternate" href="/blog/atom.xml" title="Eli&#39;s House" type="application/atom+xml">
+  <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/blog/">Eli&#39;s House</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/blog/">Home</a></li>
+      
+        <li><a href="/blog/archives">Archives</a></li>
+      
+        <li><a href="/blog/about">About</a></li>
+      
+        <li><a href="/blog/atom.xml">RSS</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>主机连接 CentOS 需要做的一些设置</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/blog/2016/06/09/主机连接CentOS需要做的一些设置/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-06-08T16:00:00.000Z">
+          2016-06-09
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>主要是为了更新这个 Blog，在 Windows 下 Ruby 环境安装一直出现问题，所以就打算直接用 Linux 了。今天在折腾环境的过程中发现了 taobao 提供了 gem 依赖的镜像站 ruby.taobao.org，使用了以后部署起来基本无痛了，不知道主要是使用 Linux 导致还是镜像地址导致的，不过两方面的原因应该都有 gem 官方源抽风的概率太高了。</p>
+<p>对于 Linux 桌面版已经没兴趣了，况且虚拟机里有图形界面会卡不少，所以安装的 CentOS 并没有带图形界面，这使得网页预览成了一个问题，遂想着用主机来浏览。</p>
+<p>这就涉及到了一个怎么做的问题。</p>
+<p>其实，当初建好这个虚拟机以后我就用 ssh 的方式来登录了，直接用虚拟机的界面太麻烦特别是要开多个终端的时候，在 Windows 可以使用 Xshell，相当好用，虽然是付费软件但对家庭与学校使用是免费的。主机对虚拟机进行 ssh 的登录其实和 http 访问原理是相同的，都是虚拟机中暴露出一个端口，然后通过访问虚拟机的 ip 以及相应的端口来进行内容访问。</p>
+<p>所以把这两个内容放在一起说了，其实这个过程中主要要做的就是端口转发，整个过程下来，大概进行了以下几个步骤：</p>
+<ol>
+<li>虚拟机建立相应的服务（ssh，serve）</li>
+<li>暴露端口 <a href="http://ask.xmodulo.com/open-port-firewall-centos-rhel.html" target="_blank" rel="noopener">How to open a port in the firewall on CentOS or RHEL</a></li>
+<li>端口转发，这部分需要针对你的虚拟机软件来设置 VirtualBox 等都提供的非常方便设置选项</li>
+<li>使用相应的方式访问</li>
+</ol>
+<p>可能你会发现设置以后访问不了的情况，请确认端口号是否对外开启，同时端口转发的端口与地址是否准确。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2019 Eli Yao
+    
+  </p>
+</footer>
+    
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261354241'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261354241' type='text/javascript'%3E%3C/script%3E"));</script>
+<style>
+#cnzz_stat_icon_1261354241 {display:none;}
+</style>
+
+  </div>
+</div>
+</body>
+</html>
