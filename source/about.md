@@ -13,4 +13,4 @@ permalink: /about/
 
 ### Contact me
 
-Email: [blog@eliyao.com](mailto:blog@eliyao.com)
+Email: [eliyao@foxmail.com](mailto:eliyao@foxmail.com)
