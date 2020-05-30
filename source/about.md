@@ -8,9 +8,9 @@ permalink: /about/
 
 ### More Information
 
-字体爱好者、伪程序员、印刷工人。
+字体爱好者、Web 工程师、印刷工人。
 
 
 ### Contact me
 
-Email: [eliyao@foxmail.com](mailto:eliyao@foxmail.com)
+Email: [blog@eliyao.com](mailto:blog@eliyao.com)
