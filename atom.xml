@@ -146,27 +146,6 @@
   </entry>
   
   <entry>
-    <title>Jekyll 在本地以及 GitHub Pages 上的部署方法</title>
-    <link href="https://blog.eliyao.com/2016/01/11/Update-Jekyll/"/>
-    <id>https://blog.eliyao.com/2016/01/11/Update-Jekyll/</id>
-    <published>2016-01-10T16:00:00.000Z</published>
-    <updated>2019-08-18T13:23:55.227Z</updated>
-    
-    <content type="html"><![CDATA[<p>因为今天需要迁移多篇已经发在微信公众号的文章，所以就在本地对 Jekyll 进行了环境部署，方便批量修改与提交。Fork Jekyll 快有一年的时间了，自己 GitHub 仓库上的版本还是 1.0 而最新的 Jekyll 已经升级到了 3.0.1，对比来看，变化还是比较大的，所以就直接新建了一个基础项目，然后将内容进行了迁移。</p><p>整个过程下来，大概进行了以下几个步骤：</p><ol><li>Ruby 运行环境安装</li><li>Gem 安装</li><li>Jekyll gem 安装</li><li>github-pages gem 安装</li><li>bundle 安装</li></ol><h2 id="Ruby-运行环境安装"><a href="#Ruby-运行环境安装" class="headerlink" title="Ruby 运行环境安装"></a>Ruby 运行环境安装</h2><p>这一步不用多说，下载地址：<a href="https://www.ruby-lang.org/en/documentation/installation/" target="_blank" rel="noopener">Installing Ruby</a></p><h2 id="Gem-安装"><a href="#Gem-安装" class="headerlink" title="Gem 安装"></a>Gem 安装</h2><p>Gem 是 Ruby 的包管理框架，用来下载依赖。<br>下载地址：<a href="https://rubygems.org/pages/download" target="_blank" rel="noopener">Download RubyGems</a></p><p>下载后需要用终端进行安装，Windows 下可以用 PowerShell。</p><h2 id="Jekyll-gem-安装"><a href="#Jekyll-gem-安装" class="headerlink" title="Jekyll gem 安装"></a>Jekyll gem 安装</h2><p>使用以下命令安装：</p><p>$ gem install jekyll</p><p>安装完成后用：</p><p>$ jekyll new myblog</p><p>该命令会新建 myblog 文件夹，然后将 Jekyll 的基础文件放在里面。</p><h2 id="github-pages-gem-安装"><a href="#github-pages-gem-安装" class="headerlink" title="github-pages gem 安装"></a>github-pages gem 安装</h2><p>使用以下命令安装：</p><p>$ gem install github-pages</p><p>内容比较多，安装时间较长。</p><h2 id="bundle-安装"><a href="#bundle-安装" class="headerlink" title="bundle 安装"></a>bundle 安装</h2><p>bundle 是 Ruby 下用来确保项目一致性的工具，具体可参见<a href="http://bundler.io/" target="_blank" rel="noopener">官网</a>。</p><p>使用以下命令安装：</p><p>$ gem install bundler</p><p>安装完成以后，需要在你的项目根目录下建立 Gemfile 文件，文件名为 Gemfile，不要后缀名。</p><p>内容为：</p><p>source ‘<a href="https://rubygems.org&#39;" target="_blank" rel="noopener">https://rubygems.org&#39;</a><br>gem ‘github-pages’</p><p>然后使用：</p><p>$ bundle install</p><p>进行依赖安装，但其实我们已经预先安装好了 github-pages，之所以这么做是因为国内的网络环境。</p><p>官方说明：</p><ul><li><p><a href="http://jekyllrb.com/docs/github-pages/" target="_blank" rel="noopener">GitHub Pages</a></p></li><li><p><a href="https://help.github.com/articles/using-jekyll-with-pages/" target="_blank" rel="noopener">Using Jekyll with Pages</a></p></li></ul><p>然后在本地进行测试：</p><p>$ bundle exec jekyll serve</p><hr><p>在这些步骤完成以后，在你的 GitHub 上新建一个 username.github.io 为名的仓库，然后 push 内容即可。（username 即你的用户名）</p><p>具体细节可以参考：<a href="https://help.github.com/categories/github-pages-basics/" target="_blank" rel="noopener">GitHub Pages Basics</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;因为今天需要迁移多篇已经发在微信公众号的文章，所以就在本地对 Jekyll 进行了环境部署，方便批量修改与提交。Fork Jekyll 快有一年的时间了，自己 GitHub 仓库上的版本还是 1.0 而最新的 Jekyll 已经升级到了 3.0.1，对比来看，变化还是比较大
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>做一些有价值的事</title>
     <link href="https://blog.eliyao.com/2016/01/11/%E5%81%9A%E4%B8%80%E4%BA%9B%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%BA%8B/"/>
     <id>https://blog.eliyao.com/2016/01/11/做一些有价值的事/</id>
@@ -181,6 +160,27 @@
       
         &lt;p&gt;今天在看「微信力量」的直播，觉得有很多同感，便暂停了手头话题的发送。张小龙与他的微信团队思考得非常深入，他提到了微信公众号并不是为了单纯做营销的存在，而为了让有价值的事能够得到更好的传播。&lt;/p&gt;
 &lt;p&gt;这几年来，我通过网络学习到了很多东西，也交到了不少朋友。接触过的网站和
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Jekyll 在本地以及 GitHub Pages 上的部署方法</title>
+    <link href="https://blog.eliyao.com/2016/01/11/Update-Jekyll/"/>
+    <id>https://blog.eliyao.com/2016/01/11/Update-Jekyll/</id>
+    <published>2016-01-10T16:00:00.000Z</published>
+    <updated>2019-08-18T13:23:55.227Z</updated>
+    
+    <content type="html"><![CDATA[<p>因为今天需要迁移多篇已经发在微信公众号的文章，所以就在本地对 Jekyll 进行了环境部署，方便批量修改与提交。Fork Jekyll 快有一年的时间了，自己 GitHub 仓库上的版本还是 1.0 而最新的 Jekyll 已经升级到了 3.0.1，对比来看，变化还是比较大的，所以就直接新建了一个基础项目，然后将内容进行了迁移。</p><p>整个过程下来，大概进行了以下几个步骤：</p><ol><li>Ruby 运行环境安装</li><li>Gem 安装</li><li>Jekyll gem 安装</li><li>github-pages gem 安装</li><li>bundle 安装</li></ol><h2 id="Ruby-运行环境安装"><a href="#Ruby-运行环境安装" class="headerlink" title="Ruby 运行环境安装"></a>Ruby 运行环境安装</h2><p>这一步不用多说，下载地址：<a href="https://www.ruby-lang.org/en/documentation/installation/" target="_blank" rel="noopener">Installing Ruby</a></p><h2 id="Gem-安装"><a href="#Gem-安装" class="headerlink" title="Gem 安装"></a>Gem 安装</h2><p>Gem 是 Ruby 的包管理框架，用来下载依赖。<br>下载地址：<a href="https://rubygems.org/pages/download" target="_blank" rel="noopener">Download RubyGems</a></p><p>下载后需要用终端进行安装，Windows 下可以用 PowerShell。</p><h2 id="Jekyll-gem-安装"><a href="#Jekyll-gem-安装" class="headerlink" title="Jekyll gem 安装"></a>Jekyll gem 安装</h2><p>使用以下命令安装：</p><p>$ gem install jekyll</p><p>安装完成后用：</p><p>$ jekyll new myblog</p><p>该命令会新建 myblog 文件夹，然后将 Jekyll 的基础文件放在里面。</p><h2 id="github-pages-gem-安装"><a href="#github-pages-gem-安装" class="headerlink" title="github-pages gem 安装"></a>github-pages gem 安装</h2><p>使用以下命令安装：</p><p>$ gem install github-pages</p><p>内容比较多，安装时间较长。</p><h2 id="bundle-安装"><a href="#bundle-安装" class="headerlink" title="bundle 安装"></a>bundle 安装</h2><p>bundle 是 Ruby 下用来确保项目一致性的工具，具体可参见<a href="http://bundler.io/" target="_blank" rel="noopener">官网</a>。</p><p>使用以下命令安装：</p><p>$ gem install bundler</p><p>安装完成以后，需要在你的项目根目录下建立 Gemfile 文件，文件名为 Gemfile，不要后缀名。</p><p>内容为：</p><p>source ‘<a href="https://rubygems.org&#39;" target="_blank" rel="noopener">https://rubygems.org&#39;</a><br>gem ‘github-pages’</p><p>然后使用：</p><p>$ bundle install</p><p>进行依赖安装，但其实我们已经预先安装好了 github-pages，之所以这么做是因为国内的网络环境。</p><p>官方说明：</p><ul><li><p><a href="http://jekyllrb.com/docs/github-pages/" target="_blank" rel="noopener">GitHub Pages</a></p></li><li><p><a href="https://help.github.com/articles/using-jekyll-with-pages/" target="_blank" rel="noopener">Using Jekyll with Pages</a></p></li></ul><p>然后在本地进行测试：</p><p>$ bundle exec jekyll serve</p><hr><p>在这些步骤完成以后，在你的 GitHub 上新建一个 username.github.io 为名的仓库，然后 push 内容即可。（username 即你的用户名）</p><p>具体细节可以参考：<a href="https://help.github.com/categories/github-pages-basics/" target="_blank" rel="noopener">GitHub Pages Basics</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;因为今天需要迁移多篇已经发在微信公众号的文章，所以就在本地对 Jekyll 进行了环境部署，方便批量修改与提交。Fork Jekyll 快有一年的时间了，自己 GitHub 仓库上的版本还是 1.0 而最新的 Jekyll 已经升级到了 3.0.1，对比来看，变化还是比较大
       
     
     </summary>
